@@ -6,6 +6,7 @@ module.exports = {
   purge: [],
   theme: {
     extend: {
+
       colors: {
         "uno-point": "#3F3DE5",
         "uno-pointlightsub": "#DADBFB",
@@ -18,34 +19,124 @@ module.exports = {
         "uno-focus": "#E85B81",
         "uno-error": "#F03D3E",
         "uno-background": "#F2F5FA",
-      }
-    },
-    fontSize: {
-      h1: ["30px",{
-        lineHeight: "40px",
-      }],
-      h2: ["20px",{
-        lineHeight: "30px",
-      }],
-      h3: ["15px",{
-        lineHeight: "25px",
-      }],
-      h4: ["10px",{
-        lineHeight: "15px",
-      }],
-      h5: ["8px",{
-        lineHeight: "12px",
-      }],
-    },
-    spacing: {
-      "7": "1.75rem",
-    },
-    borderRadius: {
-      "14": "14px",
-      "16": "16px",
-    },
-    fontFamily: {
-      'montserrat': ['Montserrat'],
+      },
+      fontSize: {
+        h1: ["30px",{
+          lineHeight: "40px",
+        }],
+        h2: ["20px",{
+          lineHeight: "30px",
+        }],
+        h3: ["15px",{
+          lineHeight: "25px",
+        }],
+        h4: ["10px",{
+          lineHeight: "15px",
+        }],
+        h5: ["8px",{
+          lineHeight: "12px",
+        }],
+      },
+
+      spacing: {
+        "7rem": "1.75rem",
+        "1440px" : "1440px",
+        "30px": "30px",
+        "240px": "240px",
+        "26px": "26px",
+        "250px": "250px",
+        "370px": "370px",
+        "390px": "390px",
+        "610px": "610px",
+        "376px": "376px",
+        "690px": "690px",
+        "272px": "272px",
+        "171px": "171px",
+        "60px": "60px",
+        "22px": "22px",
+        "84px": "84px",
+        "78px": "78px",
+        "9px": "9px",
+        "7px": "7px",
+        "6px": "6px",
+        "3px": "3px",
+        "49px": "49px",
+        "165px": "165px",
+        "214px": "214px",
+        "59px": "59px",
+        "140px": "140px",
+        "208px": "208px",
+        "19px": "19px",
+        "23px": "23px",
+        "10px": "10px",
+        "14px": "14px",
+        "2.6rem": "2.6rem",
+        "194px": "194px",
+        "2627px": "2627px",
+        "5px": "5px",
+        "25px": "25px",
+        "13px": "13px",
+        "338px": "338px",
+        "94px": "94px",
+        "144px": "144px",
+        "66px": "66px",
+        "36px": "36px",
+        "166px": "166px",
+        "174px": "174px",
+        "38px": "38px",
+        "130px": "130px",
+        "305px": "305px",
+        "1798px": "1798px",
+        "106px": "106px",
+        "104px": "104px",
+        "57px": "57px",
+        "71px": "71px",
+        "88px": "88px",
+        "506px": "506px",
+        "17px": "17px",
+        "349px": "349px",
+        "340px": "340px",
+        "840px": "840px",
+        "70px": "70px",
+        "189px": "189px",
+        "330px": "330px",
+        "226px": "226px",
+        "324px": "324px",
+        "18px": "18px",
+        "278px": "278px",
+        "463px": "463px",
+        "297px": "297px",
+        "125px": "125px",
+        "15px": "15px",
+        "109px": "109px",
+        "63px": "63px",
+        "2.875rem": "2.875rem",
+      },
+
+      borderRadius: {
+        "14": "14px",
+        "16": "16px",
+        "10px": "10px",
+        "5px": "5px",
+      },
+      borderWidth: {
+        "1.5px": "1.5px",
+        "0.75px": "0.75px",
+      },
+
+      fontFamily: {
+        'montserrat': ['Montserrat'],
+      },
+      boxShadow: {
+        "0.5": "0px 0px 5px rgba(0, 0, 0, 0.2)",
+        "0.3": "0px 0px 3px rgba(0, 0, 0, 0.1)",
+      },
+      screens: {
+        "uno": "1290px",
+        "unomax": {'max': "1290px"},
+        "mx-lg": {'max': "1024px"},
+        "mx-sm": {'max': "640px"},
+      },
     }
   },
   variants: {},

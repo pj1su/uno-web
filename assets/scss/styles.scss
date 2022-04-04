@@ -1,3 +1,115 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.card {
+    @apply w-250px h-370px rounded-10px bg-white;
+}
+
+.background_img {
+    @apply w-full h-171px;
+}
+
+.card1 {
+    @apply flex mt-9px;
+}
+
+.card1_1 {
+    @apply w-84px h-5 mr-78px ml-7px text-uno-gray font-semibold text-h4 text-center;
+}
+
+.card1_2 {
+    @apply w-60px h-5 mr-5 items-center border-uno-point border border-solid rounded-5px text-uno-point text-h4 text-center font-semibold;
+}
+
+.card2 {
+    @apply flex mb-1 mt-6px;
+}
+
+.card2_1 {
+    @apply text-h3 ml-5 mr-7rem font-semibold h-7rem w-165px text-uno-black align-middle;
+}
+
+.card2_2 {
+    @apply mt-3px mr-5 w-4 h-4;
+}
+
+.card3_1 {
+    @apply ml-5 mr-4 text-h4 font-normal w-214px h-59px text-uno-black;
+}
+
+.card3_2 {
+    @apply ml-5 h-7rem w-140px text-uno-gray font-normal text-h4;
+}
+
+.card_line {
+    @apply flex w-full;
+}
+
+.card5 {
+    @apply flex h-2.6rem items-center;
+}
+
+.card5_1 {
+    @apply w-6 h-6 ml-5 mr-6px;
+}
+
+.card5_2 {
+    @apply flex w-20 h-23px text-h4 font-semibold text-uno-black items-center;
+}
+
+.card5_3 {
+    @apply w-14px h-14px mr-9px;
+}
+
+.card5_4 {
+    @apply text-h4 font-normal mr-4;
+}
+
+.social {
+    @apply w-38px h-38px bg-uno-background flex items-center justify-center shadow-0.3 rounded-full;
+}
+
+.job {
+    @apply flex justify-center items-center text-center bg-uno-pointlightsub rounded-5px font-medium text-h3 text-uno-black;
+}
+
+.shadow_box {
+    @apply flex items-center text-center text-uno-black rounded-10px shadow-0.5 w-166px font-semibold text-h3;
+}
+
+.right_card {
+    @apply bg-white w-390px shadow-0.5 rounded-10px;
+}
+
+.menu_btn {
+    @apply w-5 mx-7px rounded-sm border-1.5px border-uno-black border-solid;
+}
+
+.menu_btn_2 {
+    @apply w-5 mx-7px mb-5px rounded-sm border-1.5px border-uno-black border-solid;
+}
+
+.name {
+    @apply flex items-center font-semibold text-h3 text-uno-black;
+}
+
+.right_tags {
+    @apply flex items-center justify-center text-center h-5 bg-uno-pointlightsub rounded-5px text-black;
+}
+
+.hide {
+    @apply hidden;
+}
+
+.visible {
+    @apply flex;
+}
+
+.show {
+    @apply block;
+}
+
+.click {
+    @apply cursor-pointer;
+}
