@@ -8,17 +8,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap" rel="stylesheet">
     <title>Document</title>
     <style type="text/css">
+        .face_chat_mic {
+            top: 18px;
+            left: 67px;
+        }
+        .send_box {
+            left: 282px;
+            bottom: 39.5px;
+        }
+        .second_box {
+            right: 30px;
+        }
         .absol_img {
             top: 66px;
             left: 144px;
         }
+        #conversation_box {
+            height: calc(690px - 489px);
+        }
+        .modal {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 0;
+            opacity: 0.25;
+            pointer-events : none;
+        }
     </style>
 </head>
 <body class="bg-uno-background">
-    <div class="font-montserrat w-1440px h-2627px unomax:h-screen unomax:w-screen">
+    <div id="main" class="font-montserrat w-1440px h-2627px m-0 unomax:h-screen unomax:w-screen" style="margin:auto;">
         <header class="flex justify-center h-6">
             <div class="w-8 flex justify-center uno:hidden unomax:container unomax:absolute">
-                <a href=""><img src="./img/Vector.svg" alt=""></a>
+                <a id="mobile_chat" class="cursor-pointer"><img src="./img/Vector.svg" alt=""></a>
             </div>
         </header>
         <div class="flex flex-wrap justify-center mt-194px unomax:container unomax:mx-auto">
@@ -28,11 +54,11 @@
                         <div class="w-full h-171px"><img src="img/배경.svg" alt=""></div>
                         <div class="flex mt-9px">
                             <div class="w-84px h-5 mr-78px ml-7px text-uno-gray font-semibold text-h4 text-center">#Developer</div>
-                            <div class="w-60px h-5 mr-5 items-center border-uno-point border border-solid rounded-5px text-uno-point text-h4 text-center font-semibold">Live</div>
+                            <div class="w-60px h-5 mr-5 items-center border-uno-point border border-solid rounded-5px cursor-pointer text-uno-point text-h4 text-center font-semibold">Live</div>
                         </div>
                         <div class="flex mb-1 mt-6px">
                             <div class="text-h3 ml-5 mr-7rem font-semibold h-7rem w-165px text-uno-black align-middle">Title</div>
-                            <div class="mt-3px mr-5 w-4 h-4"><img class="" src="img/Rectangle 1.svg" alt=""></div>
+                            <div class=" cursor-pointer mt-3px mr-5 w-4 h-4"><img class="" src="img/Rectangle 1.svg" alt=""></div>
                         </div>
                         <div>
                             <div class="ml-5 mr-4 text-h4 font-normal w-214px h-59px text-uno-black">
@@ -65,7 +91,7 @@
                         </div>
                         <div class="card2">
                             <div class="card2_1">Title</div>
-                            <div class="card2_2"><img class="" src="img/Rectangle 1.svg" alt=""></div>
+                            <div class=" cursor-pointer card2_2"><img class="" src="img/Rectangle 1.svg" alt=""></div>
                         </div>
                         <div>
                             <div class="card3_1">
@@ -98,7 +124,7 @@
                         </div>
                         <div class="card2">
                             <div class="card2_1">Title</div>
-                            <div class="card2_2"><img class="" src="img/Rectangle 1.svg" alt=""></div>
+                            <div class=" cursor-pointer card2_2"><img class="" src="img/Rectangle 1.svg" alt=""></div>
                         </div>
                         <div>
                             <div class="card3_1">
@@ -131,7 +157,7 @@
                         </div>
                         <div class="card2">
                             <div class="card2_1">Title</div>
-                            <div class="card2_2"><img class="" src="img/Rectangle 1.svg" alt=""></div>
+                            <div class=" cursor-pointer card2_2"><img class="" src="img/Rectangle 1.svg" alt=""></div>
                         </div>
                         <div>
                             <div class="card3_1">
@@ -164,7 +190,7 @@
                         </div>
                         <div class="card2">
                             <div class="card2_1">Title</div>
-                            <div class="card2_2"><img class="" src="img/Rectangle 1.svg" alt=""></div>
+                            <div class=" cursor-pointer card2_2"><img class="" src="img/Rectangle 1.svg" alt=""></div>
                         </div>
                         <div>
                             <div class="card3_1">
@@ -197,7 +223,7 @@
                         </div>
                         <div class="card2">
                             <div class="card2_1">Title</div>
-                            <div class="card2_2"><img class="" src="img/Rectangle 1.svg" alt=""></div>
+                            <div class=" cursor-pointer card2_2"><img class="" src="img/Rectangle 1.svg" alt=""></div>
                         </div>
                         <div>
                             <div class="card3_1">
@@ -230,7 +256,7 @@
                         </div>
                         <div class="card2">
                             <div class="card2_1">Title</div>
-                            <div class="card2_2"><img class="" src="img/Rectangle 1.svg" alt=""></div>
+                            <div class=" cursor-pointer card2_2"><img class="" src="img/Rectangle 1.svg" alt=""></div>
                         </div>
                         <div>
                             <div class="card3_1">
@@ -263,7 +289,7 @@
                         </div>
                         <div class="card2">
                             <div class="card2_1">Title</div>
-                            <div class="card2_2"><img class="" src="img/Rectangle 1.svg" alt=""></div>
+                            <div class=" cursor-pointer card2_2"><img class="" src="img/Rectangle 1.svg" alt=""></div>
                         </div>
                         <div>
                             <div class="card3_1">
@@ -296,7 +322,7 @@
                         </div>
                         <div class="card2">
                             <div class="card2_1">Title</div>
-                            <div class="card2_2"><img class="" src="img/Rectangle 1.svg" alt=""></div>
+                            <div class=" cursor-pointer card2_2"><img class="" src="img/Rectangle 1.svg" alt=""></div>
                         </div>
                         <div>
                             <div class="card3_1">
@@ -332,7 +358,7 @@
                         </div>
                         <div class="card2">
                             <div class="card2_1">Title</div>
-                            <div class="card2_2"><img class="" src="img/Rectangle 1.svg" alt=""></div>
+                            <div class=" cursor-pointer card2_2"><img class="" src="img/Rectangle 1.svg" alt=""></div>
                         </div>
                         <div>
                             <div class="card3_1">
@@ -365,7 +391,7 @@
                         </div>
                         <div class="card2">
                             <div class="card2_1">Title</div>
-                            <div class="card2_2"><img class="" src="img/Rectangle 1.svg" alt=""></div>
+                            <div class=" cursor-pointer card2_2"><img class="" src="img/Rectangle 1.svg" alt=""></div>
                         </div>
                         <div>
                             <div class="card3_1">
@@ -398,7 +424,7 @@
                         </div>
                         <div class="card2">
                             <div class="card2_1">Title</div>
-                            <div class="card2_2"><img class="" src="img/Rectangle 1.svg" alt=""></div>
+                            <div class=" cursor-pointer card2_2"><img class="" src="img/Rectangle 1.svg" alt=""></div>
                         </div>
                         <div>
                             <div class="card3_1">
@@ -434,7 +460,7 @@
                         </div>
                         <div class="card2">
                             <div class="card2_1">Title</div>
-                            <div class="card2_2"><img class="" src="img/Rectangle 1.svg" alt=""></div>
+                            <div class=" cursor-pointer card2_2"><img class="" src="img/Rectangle 1.svg" alt=""></div>
                         </div>
                         <div>
                             <div class="card3_1">
@@ -467,7 +493,7 @@
                         </div>
                         <div class="card2">
                             <div class="card2_1">Title</div>
-                            <div class="card2_2"><img class="" src="img/Rectangle 1.svg" alt=""></div>
+                            <div class=" cursor-pointer card2_2"><img class="" src="img/Rectangle 1.svg" alt=""></div>
                         </div>
                         <div>
                             <div class="card3_1">
@@ -500,7 +526,7 @@
                         </div>
                         <div class="card2">
                             <div class="card2_1">Title</div>
-                            <div class="card2_2"><img class="" src="img/Rectangle 1.svg" alt=""></div>
+                            <div class=" cursor-pointer card2_2"><img class="" src="img/Rectangle 1.svg" alt=""></div>
                         </div>
                         <div>
                             <div class="card3_1">
@@ -693,7 +719,7 @@
                                             <span class="font-normal text-uno-black text-h4">Time : 6:00-7:00pm </span>
                                         </div>
                                         <div class="h-10">
-                                            <div class="flex items-center text-center justify-center w-60px h-5 bg-uno-point text-white font-semibold text-h4 rounded-5px">join</div>
+                                            <div class="join flex items-center text-center justify-center w-60px h-5 bg-uno-point text-white cursor-pointer font-semibold text-h4 rounded-5px">join</div>
                                         </div>
                                     </div>
                                     <!--tags-->
@@ -719,7 +745,7 @@
                                             <span class="font-normal text-uno-black text-h4">Time : 6:00-7:00pm </span>
                                         </div>
                                         <div class="h-10">
-                                            <div class="flex items-center text-center justify-center w-60px h-5 bg-uno-point text-white font-semibold text-h4 rounded-5px">join</div>
+                                            <div class="join flex items-center text-center justify-center w-60px h-5 bg-uno-point text-white cursor-pointer font-semibold text-h4 rounded-5px">join</div>
                                         </div>
                                     </div>
                                     <!--tags-->
@@ -745,7 +771,7 @@
                                             <span class="font-normal text-uno-black text-h4">Time : 6:00-7:00pm </span>
                                         </div>
                                         <div class="h-10">
-                                            <div class="flex items-center text-center justify-center w-60px h-5 bg-uno-point text-white font-semibold text-h4 rounded-5px">join</div>
+                                            <div class="join cursor-pointer flex items-center text-center justify-center w-60px h-5 bg-uno-point text-white font-semibold text-h4 rounded-5px">join</div>
                                         </div>
                                     </div>
                                     <!--tags-->
@@ -767,13 +793,13 @@
                             </div>
                             <div class="flex h-78px justify-center items-center">
                                 <div class="flex justify-between items-center w-297px h-25px">
-                                    <a id="first_person" class="click visible"><img src="img/blue_person.svg" width="31" alt=""></a>
-                                    <a id="second_person" class="click hide"><img src="img/user-group-solid 1.svg" width="31" alt=""></a>
-                                    <a class="click"><img src="img/Vector.svg" width="28" alt=""></a>
-                                    <a class="click"><img src="img/comments-solid.svg" width="31" alt=""></a>
-                                    <a id="first_cal" class="click visible"><img src="img/calendar-check-solid 1.svg" width="22" alt=""></a>
-                                    <a id="second_cal" class="click hide"><img src="img/bule-cal.svg" width="22" alt=""></a>
-                                    <a class="click"><img src="img/gear-solid 1.svg" width="24" alt=""></a>
+                                    <a id="first_person" class="cursor-pointer visible"><img src="img/blue_person.svg" width="31" alt=""></a>
+                                    <a id="second_person" class="cursor-pointer hide"><img src="img/user-group-solid 1.svg" width="31" alt=""></a>
+                                    <a class="cursor-pointer"><img src="img/Vector.svg" width="28" alt=""></a>
+                                    <a class="cursor-pointer"><img src="img/comments-solid.svg" width="31" alt=""></a>
+                                    <a id="first_cal" class="cursor-pointer visible"><img src="img/calendar-check-solid 1.svg" width="22" alt=""></a>
+                                    <a id="second_cal" class="cursor-pointer hide"><img src="img/bule-cal.svg" width="22" alt=""></a>
+                                    <a class="cursor-pointer"><img src="img/gear-solid 1.svg" width="24" alt=""></a>
                                 </div>
                             </div>
                         </div>
@@ -860,5 +886,418 @@
             </div>
         </div>
     </div>
+
+    <!-- desktop video -->
+    <div id="desktop_video" class="bg-uno-background hide absolute font-montserrat rounded-10px shadow-0.5 w-1798px h-690px">
+
+        <div class="all-box flex">
+            <div class="relative left-all w-1408px border-r border-solid border-uno-gray">
+                <!--left first box -->
+
+                <div class="flex pt-23px pl-30px items-center">
+                    <div class="w-8 mr-14px"><img src="img/video-solid 1.svg" alt=""></div>
+                    <div class="font-semibold text-uno-black text-h2">Video Chat</div>
+                </div>
+                <!-- video -->
+                <div class="h-557px flex items-center">
+                    <div class="flex items-center">
+                        <div id="first_img" class="w-840px h-506px show rounded-10px ml-165px" style="background-image: url(img/video_person.svg);"></div>
+                        <div id="second_img" class="hide justify-end">
+                            <div class="w-580px h-325px ml-38px mr-38px" style="background-image: url(img/video_person2.svg);"></div>
+                            <div class="w-580px h-325px mr-10" style="background-image: url(img/video_person2.svg);"></div>
+                        </div>
+                        
+                        <!-- second box -->
+                        <div class="absolute second_box">
+                            <!-- first participant -->
+                            <div class="mb-10px">
+                                <div class="w-104px h-57px relative" style="background-image: url(img/participant.svg);">
+                                    <div class="face_chat_mic absolute bg-white w-8 h-4 rounded-sm">
+                                        <div class="flex h-4 items-center">
+                                            <div class="cursor-pointer ml-5px mr-2"><img src="img/microphone-solid 1.svg" width="8" alt=""></div>
+                                            <div class="h-10px w-1 cursor-pointer">
+                                                <div class="w-2px h-2px bg-uno-black mb-2px"></div>
+                                                <div class="w-2px h-2px bg-uno-black mb-2px"></div>
+                                                <div class="w-2px h-2px bg-uno-black"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-center h-17px bg-uno-point">
+                                    <img class="mr-7px" src="img/participant_icon.svg" alt="">
+                                    <div class="font-normal text-h4 text-white">James</div>
+                                </div>
+                            </div>
+                            <!-- / first participant -->
+                            <!-- second participant -->
+                            <div class="mb-10px">
+                                <div class="w-104px h-57px relative" style="background-image: url(img/participant.svg);">
+                                    <div class="face_chat_mic absolute bg-white w-8 h-4 rounded-sm">
+                                        <div class="flex h-4 items-center">
+                                            <div class="cursor-pointer ml-5px mr-2"><img src="img/microphone-solid 1.svg" width="8" alt=""></div>
+                                            <div class="h-10px cursor-pointer">
+                                                <div class="w-2px h-2px bg-uno-black mb-2px"></div>
+                                                <div class="w-2px h-2px bg-uno-black mb-2px"></div>
+                                                <div class="w-2px h-2px bg-uno-black"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-center h-17px bg-uno-point">
+                                    <img class="mr-7px" src="img/participant_icon.svg" alt="">
+                                    <div class="font-normal text-h4 text-white">James</div>
+                                </div>
+                            </div>
+                            <!-- / second participant -->
+                            <!-- third participant -->
+                            <div class="mb-10px">
+                                <div class="w-104px h-57px relative" style="background-image: url(img/participant.svg);">
+                                    <div class="face_chat_mic absolute bg-white w-8 h-4 rounded-sm">
+                                        <div class="flex h-4 items-center">
+                                            <div class="cursor-pointer ml-5px mr-2"><img src="img/microphone-solid 1.svg" width="8" alt=""></div>
+                                            <div class="h-10px w-1 cursor-pointer">
+                                                <div class="w-2px h-2px bg-uno-black mb-2px"></div>
+                                                <div class="w-2px h-2px bg-uno-black mb-2px"></div>
+                                                <div class="w-2px h-2px bg-uno-black"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-center h-17px bg-uno-point">
+                                    <img class="mr-7px" src="img/participant_icon.svg" alt="">
+                                    <div class="font-normal text-h4 text-white">James</div>
+                                </div>
+                            </div>
+                            <!-- / third participant -->
+                            <!-- forth participant -->
+                            <div class="mb-10px">
+                                <div class="w-104px h-57px relative" style="background-image: url(img/participant.svg);">
+                                    <div class="face_chat_mic absolute bg-white w-8 h-4 rounded-sm">
+                                        <div class="flex h-4 items-center">
+                                            <div class="cursor-pointer ml-5px mr-2"><img src="img/microphone-solid 1.svg" width="8" alt=""></div>
+                                            <div class="h-10px w-1 cursor-pointer">
+                                                <div class="w-2px h-2px bg-uno-black mb-2px"></div>
+                                                <div class="w-2px h-2px bg-uno-black mb-2px"></div>
+                                                <div class="w-2px h-2px bg-uno-black"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-center h-17px bg-uno-point">
+                                    <img class="mr-7px" src="img/participant_icon.svg" alt="">
+                                    <div class="font-normal text-h4 text-white">James</div>
+                                </div>
+                            </div>
+                            <!-- / forth participant -->
+                            <!-- five participant -->
+                            <div class="mb-10px">
+                                <div class="w-104px h-57px relative" style="background-image: url(img/participant.svg);">
+                                    <div class="face_chat_mic absolute bg-white w-8 h-4 rounded-sm">
+                                        <div class="flex h-4 items-center">
+                                            <div class="cursor-pointer ml-5px mr-2"><img src="img/microphone-solid 1.svg" width="8" alt=""></div>
+                                            <div class="h-10px w-1 cursor-pointer">
+                                                <div class="w-2px h-2px bg-uno-black mb-2px"></div>
+                                                <div class="w-2px h-2px bg-uno-black mb-2px"></div>
+                                                <div class="w-2px h-2px bg-uno-black"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-center h-17px bg-uno-point">
+                                    <img class="mr-7px" src="img/participant_icon.svg" alt="">
+                                    <div class="font-normal text-h4 text-white">James</div>
+                                </div>
+                            </div>
+                            <!-- / five participant -->
+                            <!-- six participant -->
+                            <div class="">
+                                <div class="w-104px h-57px relative" style="background-image: url(img/participant.svg);">
+                                    <div class="face_chat_mic absolute bg-white w-8 h-4 rounded-sm">
+                                        <div class="flex h-4 items-center">
+                                            <div class="cursor-pointer ml-5px mr-2"><img src="img/microphone-solid 1.svg" width="8" alt=""></div>
+                                            <div class="h-10px w-1 cursor-pointer">
+                                                <div class="w-2px h-2px bg-uno-black mb-2px"></div>
+                                                <div class="w-2px h-2px bg-uno-black mb-2px"></div>
+                                                <div class="w-2px h-2px bg-uno-black"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-center h-17px bg-uno-point">
+                                    <img class="mr-7px" src="img/participant_icon.svg" alt="">
+                                    <div class="font-normal text-h4 text-white">James</div>
+                                </div>
+                            </div>
+                            <!-- / six participant -->
+                        </div>
+                        <!--/ second box -->
+                    </div>
+                    <!--/ video -->
+                </div>
+                <!-- left footer -->
+                <div class="bg-white border-t flex items-center border-solid border-uno-gray h-20">
+                    <div class="flex ml-88px w-903px">
+                        <div class="flex w-488px items-center justify-between mr-10">
+                            <div class="cursor-pointer"><img src="img/microphone-solid 1.svg" alt=""></div>
+                            <div class="cursor-pointer"><img src="img/video-slash-solid 1.svg" alt=""></div>
+                            <div class="cursor-pointer"><img src="img/user-group-solid 1.svg" alt=""></div>
+                            <div class="cursor-pointer"><img src="img/user-group-solid 1-1.svg" alt=""></div>
+                            <div class="cursor-pointer"><img src="img/hand-solid 1.svg" alt=""></div>
+                            <div class="cursor-pointer"><img src="img/desktop-solid 1.svg" alt=""></div>
+                            <div class="cursor-pointer"><img src="img/record-vinyl-solid 1.svg" alt=""></div>
+                            <div class="cursor-pointer"><img src="img/gear-solid 1.svg" alt=""></div>
+                        </div>
+                        <div class="flex items-center justify-between w-376px">
+                            <div id="first_layout" class="cursor-pointer"><img src="img/layout-1.svg" alt=""></div>
+                            <div id="second_layout" class="cursor-pointer"><img src="img/layout-2.svg" alt=""></div>
+                            <div class="cursor-pointer"><img src="img/layout-3.svg" alt=""></div>
+                            <div class="cursor-pointer"><img src="img/layout-4.svg" alt=""></div>
+                            <div class="cursor-pointer"><img src="img/layout-5.svg" alt=""></div>
+                            <div class="cursor-pointer"><img src="img/layout-6.svg" alt=""></div>
+                            <div class="cursor-pointer"><img src="img/layout-7.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="blue_btn ml-232px cursor-pointer flex justify-center items-center w-104px h-7rem">Leave</div>
+                </div>
+                <!--/ left footer -->
+            </div>
+            <!-- right box -->
+            <div class="bg-white w-390px h-690px">
+                <!-- menu_name bar -->
+                <div>
+                    <!-- menu -->
+                    <div class="flex justify-between mb-19px ml-26px mt-25px mr-5">
+                        <div class="flex items-center">
+                            <div class="w-30px"><img src="img/Component 19.svg" alt=""></div>
+                            <div class="ml-5 font-semibold text-h2">Chat</div>
+                        </div>
+                        <div class="flex items-center">
+                            <a href=""><div class="mr-23px"><img src="img/Search.svg" alt=""></div></a>
+                            <div class="h-10 cursor-pointer mr-7rem">
+                                <a href="">
+                                    <div class="menu_btn mt-10px mb-5px"></div>
+                                    <div class="menu_btn_2"></div>
+                                    <div class="menu_btn mb-10px"></div>
+                                </a>
+                            </div>
+                            <a id="desktop_close" href=""><div><img src="img/Close_round.svg" alt=""></div></a>
+                        </div>
+                    </div>
+                    <!-- name -->
+                    <div class="flex items-center">
+                        <div class="ml-7rem"><img src="img/Expand_left_light.svg" alt=""></div>
+                        <div class="h-36px mb-23px ml-94px flex items-center font-semibold text-h3 text-uno-black">Jessica Rose</div>
+                    </div>
+                </div>
+                <!--/ menu_name bar -->
+
+                <!-- conversation -->
+                
+                <div class="flex justify-center mb-7rem">
+                    <div class="h-5 w-204px rounded-5px bg-uno-pointlightsub font-semibold text-h4 text-uno-black text-center flex justify-center items-center">Monday, March 20. 2022</div>
+                </div>
+                <div class="w-390px h-310px flex justify-center">
+                    <ul class="messages w-330px">
+                        <!-- other -->
+                        <li class="flex mb-6">
+                            <img class="mr-22px w-49px h-49px" src="img/chat_avatar.svg" alt="">
+                            <div class="text-uno-black">
+                                <div class="font-semibold text-h3 h-36px mt-1">Jessica Rose</div>
+                                <div class="bg-uno-background border-solid border-8 border-uno-background rounded-lg">
+                                    <div class="ml-5">
+                                        <span class="font-normal text-h4 flex justify-center items-center break-words">Good moring !<br>When you want to video chat?</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="font-normal text-uno-gray text-h5 ml-10px flex items-end">11:55pm</span>
+                        </li>
+                        <!--/ other -->
+
+                        <!-- i am -->
+                        <li class="flex justify-end">
+                            <span class="font-normal flex items-end text-uno-gray text-h5">11:55pm</span>
+                            <div class="bg-uno-background border-solid border-8 border-uno-background rounded-lg ml-10px">
+                                <div class="mr-5">
+                                    <span class="font-normal text-h4 flex justify-center items-center break-words">Hi. can you do it now?</span>
+                                </div>
+                            </div>
+                        </li>
+                        <!--/ i am -->
+                    </ul>
+                </div>
+                
+                <!-- conversation -->
+
+                <!-- right box -->
+                <div class="border-t relative h-189px border-solid border-uno-gray">
+                    <div>
+                        <div class="flex py-5 justify-center items-center">
+                            <div class="flex w-278px justify-between items-center">
+                                <div class="cursor-pointer"><img src="img/face-smile-solid 1.svg" alt=""></div>
+                                <div class="cursor-pointer"><img src="img/file-medical-solid 1.svg" alt=""></div>
+                                <div class="cursor-pointer"><img src="img/record-vinyl-solid 1.svg" alt=""></div>
+                                <div class="cursor-pointer"><img src="img/video-solid 1.svg" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="flex justify-center">
+                            <input class="w-327px h-100px bg-uno-background rounded-10px" type="text">
+                            <div class="send_box absolute">
+                                <input class="blue_btn w-60px h-22px" type="button" value="Send">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /right box -->
+        </div>
+    </div>
+    <!-- desktop video -->
+
+    <!-- mobile chat -->
+    <div id="mobile_modal" class="fixed m-auto z-10 font-montserrat hide">
+        <!-- mobile video -->
+        <div class="bg-white w-390px h-690px">
+            <!-- menu_name bar -->
+            <div>
+                <!-- menu -->
+                <div class="flex justify-between mb-19px ml-26px pt-22px mr-5">
+                    <div class="flex items-center">
+                        <div class="w-30px"><img src="img/Component 19.svg" alt=""></div>
+                        <div class="ml-5 font-semibold text-h2">Chat</div>
+                    </div>
+                    <div class="flex items-center">
+                        <a href=""><div class="mr-23px"><img src="img/Search.svg" alt=""></div></a>
+                        <div class="h-10 cursor-pointer mr-7rem">
+                            <a href="">
+                                <div class="menu_btn mt-10px mb-5px"></div>
+                                <div class="menu_btn_2"></div>
+                                <div class="menu_btn mb-10px"></div>
+                            </a>
+                        </div>
+                        <a id="mobile_close"><div class="cursor-pointer"><img src="img/Close_round.svg" alt=""></div></a>
+                    </div>
+                </div>
+                <!-- video -->
+                <div class="flex justify-center h-94px mb-14px">
+                    <div class="w-166px mr-5px" style="background-image: url(img/mobile_video.svg);"></div>
+                    <div class="w-166px pl-5px" style="background-image: url(img/mobile_video.svg);"></div>
+                </div>
+                <!-- / video -->
+                <!-- name -->
+                <div class="flex items-center mb-75px">
+                    <div class="ml-7rem"><img src="img/Expand_left_light.svg" alt=""></div>
+                    <div class="h-36px ml-94px flex items-center font-semibold text-h3 text-uno-black">Jessica Rose</div>
+                </div>
+            </div>
+            <!--/ menu_name bar -->
+
+            <!-- conversation -->
+            <div id="conversation_box" class="w-390px flex justify-center">
+                <ul class="messages w-330px">
+                    <!-- other -->
+                    <li class="flex mb-6">
+                        <img class="mr-22px w-49px h-49px" src="img/chat_avatar.svg" alt="">
+                        <div class="text-uno-black">
+                            <div class="font-semibold text-h3 h-36px mt-1">Jessica Rose</div>
+                            <div class="bg-uno-background border-solid border-8 border-uno-background rounded-lg">
+                                <div class="ml-5">
+                                    <span class="font-normal text-h4 flex justify-center items-center break-words">Good moring !<br>When you want to video chat?</span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="font-normal text-uno-gray text-h5 ml-10px flex items-end">11:55pm</span>
+                    </li>
+                    <!--/ other -->
+
+                    <!-- i am -->
+                    <li class="flex justify-end">
+                        <span class="font-normal flex items-end text-uno-gray text-h5">11:55pm</span>
+                        <div class="bg-uno-background border-solid border-8 border-uno-background rounded-lg ml-10px">
+                            <div class="mr-5">
+                                <span class="font-normal text-h4 flex justify-center items-center break-words">Hi. can you do it now?</span>
+                            </div>
+                        </div>
+                    </li>
+                    <!--/ i am -->
+                </ul>
+            </div>
+            
+            <!-- conversation -->
+
+            <!-- chat box -->
+            <div class="border-t relative h-189px border-solid border-uno-gray">
+                <div>
+                    <div class="flex py-5 justify-center items-center">
+                        <div class="flex w-278px justify-between items-center">
+                            <div class="cursor-pointer"><img src="img/face-smile-solid 1.svg" alt=""></div>
+                            <div class="cursor-pointer"><img src="img/file-medical-solid 1.svg" alt=""></div>
+                            <div class="cursor-pointer"><img src="img/record-vinyl-solid 1.svg" alt=""></div>
+                            <div class="cursor-pointer"><img src="img/video-solid 1.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center">
+                        <input class="w-327px h-100px bg-uno-background rounded-10px" type="text">
+                        <div class="send_box absolute">
+                            <input class="blue_btn w-60px h-22px cursor-pointer" type="button" value="Send">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /mobile video -->
+    </div>
+    <!-- mobile chat -->
+    <script>
+        const first_img = document.getElementById('first_img');
+        const second_img = document.getElementById('second_img');
+        const first_layout = document.getElementById('first_layout');
+        const second_layout = document.getElementById('second_layout');
+        first_layout.addEventListener('click', layout1);
+        function layout1() {
+            first_img.classList.replace('hide', 'show');
+            second_img.classList.replace('visible', 'hide');
+        }
+        second_layout.addEventListener('click', layout2);
+        function layout2() {
+            first_img.classList.replace('show','hide');
+            second_img.classList.replace('hide','visible');
+        }
+        const join = document.getElementsByClassName('join');
+        const desktop_video = document.getElementById("desktop_video");
+        const main = document.getElementById("main");
+        for (var i=0; i<join.length; i++) {
+            join[i].addEventListener('click',desktop);
+            function desktop() {
+                main.classList.add("modal");
+                document.documentElement.scrollTop = 0;
+                desktop_video.classList.replace('hide','show');
+            }
+        }
+        const mobile_chat = document.getElementById('mobile_chat');
+        const mobile_modal = document.getElementById('mobile_modal');
+        mobile_chat.addEventListener('click',mobile);
+        function mobile() {
+            main.classList.add('modal');
+            document.documentElement.scrollTop = 0;
+            mobile_modal.style.top = '50%';
+            mobile_modal.style.left = '50%';
+            mobile_modal.style.transform = "translate(-50%, -50%)";
+
+            mobile_modal.classList.replace('hide','show');
+        }
+        const mobile_close = document.getElementById('mobile_close');
+        const desktop_close = document.getElementById('desktop_close');
+        mobile_close.addEventListener('click',close);
+        function close() {
+            main.classList.remove('modal');
+            mobile_modal.classList.replace('show','hide');
+        }
+        desktop_close.addEventListener('click',close1);
+        function close1() {
+            main.classList.remove('modal');
+            desktop_video.classList.replace('show','hide');
+            console.log
+        }
+    </script>
 </body>
 </html>
